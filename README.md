@@ -13,6 +13,7 @@ Credits:
 <li>ffmpeg</li>
 <li>bootstrap</li>
 <li>jquery</li>
+<li>simpleUpload plugin</li>
 <li>html</li>
 <li>notepad++</li>
 <li>internet service</li>
