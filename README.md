@@ -3,6 +3,13 @@
 Run your own custom ffmpeg parameter,
 make sure latest ffmpeg module installed on your server.
 
+
+
+<img src="https://raw.githubusercontent.com/Pedroxam/PHP-FFmpeg-Command-Execution/master/shot.png">
+
+
+
+
 you can convert your videos with easy options and see live ffmpeg logs!
 
 i created this project with simple ajax function.
