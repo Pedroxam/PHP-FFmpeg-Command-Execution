@@ -8,15 +8,17 @@ you can convert your videos with easy options and see live ffmpeg logs!
 i created this project with simple ajax function.
 
 Credits:
-php
-ffmpeg
-bootstrap
-jquery
-html
-notepad++
-internet
-my mouse
-my keyboard
-my mind
+<ul>
+<li>php</li>
+<li>ffmpeg</li>
+<li>bootstrap</li>
+<li>jquery</li>
+<li>html</li>
+<li>notepad++</li>
+<li>internet service</li>
+<li>my mouse</li>
+<li>my keyboard</li>
+<li>my mind</li>
+</ul>
 
 Thanks !
