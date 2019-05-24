@@ -100,6 +100,6 @@
 </div><!-- container -->
 	<script src="./assets/bootstrap.min.js"></script>
 	<script src="./assets/simpleUpload.js"></script>
-	<script src="./assets/app.js?r=<?= rand(); ?>"></script>
+	<script src="./assets/app.js"></script>
 </body>
 </html>
