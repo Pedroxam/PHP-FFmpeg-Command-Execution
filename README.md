@@ -23,6 +23,8 @@ You can convert your videos with standard configs with simple ffmpeg parameter, 
 
 <code>ffmpeg -i INPUT OUTPUT</code>
 
+Then just click on start button and waiting for magic !
+
 Credits:
 <ul>
 <li>php</li>
