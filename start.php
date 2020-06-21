@@ -5,11 +5,11 @@
 * Email: pedroxam@gmail.com
 */
 
-$root = dirname(__FILE__) . '/';
+$root = dirname(__FILE__);
 
-$input  = $root . '/input/' . $_POST['video'];
+$input  = $root . '/input/' . trim($_POST['video']);
 
-$output = $root . '/output/' . basename($input);
+$output = $root . '/output/' . basename($_POST['video']);
 
 $command = str_ireplace(['INPUT','OUTPUT'], [$input,$output], trim($_POST['code']));
 
