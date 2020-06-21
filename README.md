@@ -15,7 +15,7 @@ i created this project with simple ajax function.
 
 <h2>How to Use</h2>
 
-First click on choose file then select your video you want to convert. then in the ffmpeg parameter box, you can enter your custom ffmepg codes, also you must enter INPUT instead of video file url and enter OUTPUT instead of output video path !
+First click on choose file then select your video you want to convert. then in the videos list, choose your video and in the ffmpeg parameter box, you can enter your custom ffmepg codes, also you must enter INPUT instead of video file url and enter OUTPUT instead of output video path !
 
 <h2>Example</h2>
 
