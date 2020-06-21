@@ -9,10 +9,19 @@ make sure latest ffmpeg module installed on your server.
 
 
 
-
 you can convert your videos with easy options and see live ffmpeg logs!
 
 i created this project with simple ajax function.
+
+<h2>How to Use</h2>
+
+First click on choose file then select your video you want to convert. then in the fmpeg parameter box, you can enter your custom ffmepg codes, also you must enter INPUT instead of video file url and enter OUTPUT instead of output video path !
+
+<h2>Example</h2>
+
+You can convert your videos with standard configs with simple ffmpeg parameter, after choosing your video, just enter following in the text box:
+
+<code>ffmpeg -i INPUT OUTPUT</code>
 
 Credits:
 <ul>
@@ -21,12 +30,6 @@ Credits:
 <li>bootstrap</li>
 <li>jquery</li>
 <li>simpleUpload plugin</li>
-<li>html</li>
-<li>notepad++</li>
-<li>internet service</li>
-<li>my mouse</li>
-<li>my keyboard</li>
-<li>my mind</li>
 </ul>
 
 Thanks !
