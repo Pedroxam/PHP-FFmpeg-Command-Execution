@@ -52,9 +52,9 @@
 		*/
 		$('#file').change(function(){
 			var ext = $('#file').val().split('.').pop().toLowerCase();
-			if ($.inArray(ext, [ 'mp4', 'mkv', 'avi', '3gp', ]) == -1){
+			if ($.inArray(ext, [ 'mp4', 'mkv', 'avi', 'flv', '3gp' ]) == -1){
 				$("#status").fadeIn(50,function() {
-					$('#status').html('Only Video Files is Allowed.')
+					$('#status').html('Only Video Files is Allowed: [mp4, mkv, avi, flv, 3gp]')
 				});
 			}
 			else
@@ -89,11 +89,13 @@
 			}
 			
 			$(this).addClass('disabled');
+			
 			$.ajax({
 				type:'POST',
 				url:'./start.php',
-				data: { video: $('#video').val(),
-						code: $('#code').val()
+				data: {
+					video: $('#video').val(),
+					code: $('#code').val()
 				}
 			})
 			.done(function(){
