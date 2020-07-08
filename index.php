@@ -24,7 +24,7 @@
 		<div class="form-group">
 			<input type="file" name="file" id="file" class="form-control border-0">
 		</div>
-		<label class="ml-3">Allowed Formats: mp4, mkv, avi, 3gp</label>
+		<label class="ml-3">Allowed Formats: mp4, mkv, avi, flv, 3gp</label>
 	</div>
 
 	<div class="col mt-3 text-center">
