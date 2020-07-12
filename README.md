@@ -21,7 +21,9 @@ You can convert your videos with standard configs with simple ffmpeg parameter, 
 
 <code>ffmpeg -i INPUT OUTPUT</code>
 
-Then just click on start button and waiting for magic !
+Then just click on start button and wait for magic !
+
+Tip: You can use <a href="https://www.mrfdev.com/ffmpeg-command-generator">this tools</a> to generate ffmpeg commands.
 
 Credits:
 <ul>
