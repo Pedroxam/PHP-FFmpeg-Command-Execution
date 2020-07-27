@@ -23,7 +23,7 @@ You can convert your videos with standard configs with simple ffmpeg parameter, 
 
 Then just click on start button and wait for magic !
 
-Tip: You can use <a href="https://www.mrfdev.com/ffmpeg-command-generator">this tools</a> to generate ffmpeg commands.
+Tips: You can use <a href="http://www.mackinger.at/ffmpeg/">this tools</a> to generate ffmpeg commands.
 
 Credits:
 <ul>
