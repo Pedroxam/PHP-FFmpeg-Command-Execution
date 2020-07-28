@@ -1,7 +1,7 @@
 # PHP-FFmpeg-Command-Execution
 
 Run your own custom ffmpeg parameter,
-make sure latest ffmpeg module installed on your server.
+make sure latest <a href="http://ffmpeg.org">ffmpeg module</a> installed on your server.
 
 <img src="https://raw.githubusercontent.com/Pedroxam/PHP-FFmpeg-Command-Execution/master/shot.png">
 
@@ -23,7 +23,7 @@ You can convert your videos with standard configs with simple ffmpeg parameter, 
 
 Then just click on start button and wait for magic !
 
-Tips: You can use <a href="http://www.mackinger.at/ffmpeg/">this tools</a> to generate ffmpeg commands.
+Tips: If you not familiar with ffmpeg commands, You can use <a href="http://www.mackinger.at/ffmpeg/">this tools</a> to generate some ffmpeg commands.
 
 Credits:
 <ul>
