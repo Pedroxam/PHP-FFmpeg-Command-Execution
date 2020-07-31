@@ -47,7 +47,14 @@
 		</div>
 	</div>
 
-	<?php foreach(glob(__DIR__ . '/input/*.mp4') as $file){ ?>
+	<?php
+	$allowed_ext = ['mp4', 'mkv', 'avi', 'flv', '3gp'];
+	
+	foreach(glob(__DIR__ . '/input/*') as $file){
+		$ext = pathinfo($file, PATHINFO_EXTENSION);
+			if(in_array($ext, $allowed_ext)){
+				
+	?>
 
 		<div class="row">
 
@@ -56,12 +63,14 @@
 			</div>
 
 			<div class="col-md-6 pt-2 border" id="selection">
-				<input class="mycheckbox" type="radio" name="fruit" data-video="<?php echo basename($file); ?>">
+				<input class="mycheckbox" type="radio" data-video="<?php echo basename($file); ?>">
 			</div>
 			
 		</div>
 
-	<?php } ?>
+	<?php }
+		}
+	?>
 
 	<input type="hidden" name="video" id="video" value="">
 	
