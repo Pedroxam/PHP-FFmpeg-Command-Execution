@@ -53,8 +53,8 @@
 		$('#file').change(function(){
 			var ext = $('#file').val().split('.').pop().toLowerCase();
 			if ($.inArray(ext, [ 'mp4', 'mkv', 'avi', 'flv', '3gp' ]) == -1){
-				$("#status").fadeIn(50,function() {
-					$('#status').html('Only Video Files is Allowed: [mp4, mkv, avi, flv, 3gp]')
+				$("#status_file").fadeIn(50,function() {
+					$('#status_file').html('Only Video Files is Allowed: [mp4, mkv, avi, flv, 3gp]')
 				});
 			}
 			else
