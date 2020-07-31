@@ -67,7 +67,7 @@
 	
 	<hr/>
 	
-	<h5 class="text-center">Enter FFmepg Parameters<br/><small class="text-center mt-3 d-block text-muted">(use INPUT instead of input video path and use OUTPUT instead of output video path)</small></h5>
+	<h5 class="text-center">Enter FFmpeg Parameters<br/><small class="text-center mt-3 d-block text-muted">(use INPUT instead of input video path and use OUTPUT instead of output video path)</small></h5>
 	
 	
 	<textarea id="code" rows="3" class="form-control">ffmpeg -i INPUT OUTPUT</textarea>
