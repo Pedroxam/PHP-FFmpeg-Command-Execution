@@ -63,7 +63,7 @@
 			</div>
 
 			<div class="col-md-6 pt-2 border" id="selection">
-				<input class="mycheckbox" type="radio" data-video="<?php echo basename($file); ?>">
+				<input class="mycheckbox" name="select_video" type="radio" data-video="<?php echo basename($file); ?>">
 			</div>
 			
 		</div>
