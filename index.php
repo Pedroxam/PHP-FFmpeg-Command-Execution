@@ -73,8 +73,6 @@
 	<textarea id="code" rows="3" class="form-control">ffmpeg -i INPUT OUTPUT</textarea>
 
 	<div class="col-md-12 text-center my-2">
-		<div id="status"></div>
-		<br/>
 		<button id="start" class="btn btn-danger text-white">
 			Start Encode Video
 		</button>
