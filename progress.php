@@ -1,12 +1,12 @@
 <?php
 /*
-* By Pedram
-* Telegram: @Pedroxam
-* Email: pedroxam@gmail.com
+* By Pedroxam
 */
 
-$getContent = file_get_contents('./log.txt');
+// If the log can't be displayed in the index, change $root value to: dirname(__FILE__)
+$root = '.';
 
+$getContent = file_get_contents($root . '/log.txt');
 preg_match("/Duration: (.*?), start:/ms", $getContent, $matches);
 if(!empty($rawDuration = $matches[1]))
 $ar = array_reverse(explode(":", $rawDuration));
@@ -24,20 +24,14 @@ if (!empty($ar[2])) $time += intval($ar[2]) * 60 * 60;
 //progress prec..
 $progress = round(($time/$duration) * 100);
 
-if($progress > 98)
-{
+if(	
+	$progress > 98 or
+	strpos($getContent, 'Qavg') !== false or
+	strpos($getContent, 'kb/s:') !== false
+){
 	$results = 'done';
 }
-elseif(strpos($getContent, 'Qavg') !== false)
-{
-	$results = 'done';
-}
-elseif(strpos($getContent, 'kb/s:') !== false)
-{
-	$results = 'done';
-}
-else
-{
+else {
 	$results = $progress;
 }
 
