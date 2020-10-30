@@ -1,6 +1,5 @@
 /*
   * By Pedram
-  * Telegram: @Pedroxam
   * Email: pedroxam@gmail.com
 */
 
