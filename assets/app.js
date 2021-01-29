@@ -106,7 +106,7 @@
 				$('.log').show()
 				$('.progress').show();
 
-                                //Let's go my friend
+                                // "beforeStart" can be good if following method not work!
 				setProgres();
 			})
 		})
