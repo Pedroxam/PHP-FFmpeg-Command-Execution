@@ -9,11 +9,10 @@
 	var doProgress;
 
 	/**
-	* Set Start Progress Encode Video
+	* Start Progress
 	*/
-	  function SetProgressStart() {
-		doProgress = setInterval(
-		  showProgress, 2000);
+	  function setProgres() {
+		doProgress = setInterval(showProgress, 2000);
 	  }
 
 	/**
@@ -25,10 +24,10 @@
 			$('#log').html(data.log);
 			if (data.progress == "done")
 			{
+			    clearInterval(doProgress);
 			    $('#prog').html('100%');
 			    $('#prog').css('width', '100%' );
-				$('#start').removeClass('disabled');
-			    clearInterval(doProgress);
+			    $('#start').removeClass('disabled');
 			}
 			else
 			{
@@ -47,9 +46,11 @@
 		})
 		
 		/**
-		* File check then upload using simpleUpload plugin.
+		*  Check file extention and upload
 		*/
-		$('#file').change(function(){
+		$('#file').change(function()
+		{
+			//Check File Extention
 			var ext = $('#file').val().split('.').pop().toLowerCase();
 			if ($.inArray(ext, [ 'mp4', 'mkv', 'avi', 'flv', '3gp' ]) == -1){
 				$("#status_file").fadeIn(50,function() {
@@ -58,8 +59,12 @@
 			}
 			else
 			{
-				if ($(this).val() != '') {
-					var base_path = './upload.php';
+				if ($(this).val() != '')
+				{		
+                                        //upload.php file path, you can change
+					var base_path = './upload.php'; 
+					
+					// Upload file using simpleUpload plugin.
 					$(file).simpleUpload(base_path, {
 						start: function(file){
 							$('#status_file').html("Upload Started");
@@ -99,8 +104,10 @@
 			})
 			.done(function(){
 				$('.log').show()
-				$('.progress').show()
-				SetProgressStart();
+				$('.progress').show();
+
+                                //Let's go my friend
+				setProgres();
 			})
 		})
 	});
